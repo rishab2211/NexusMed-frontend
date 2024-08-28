@@ -2,7 +2,7 @@
 
 # Drug Inventory and Supply Chain Tracking System
 
-Welcome to the **Drug Inventory and Supply Chain Tracking System**! 🎉 This innovative project is designed to revolutionize how we manage the procurement, distribution, and tracking of pharmaceuticals, ensuring that the right products reach the right places at the right times and under optimal conditions.
+Welcome to the **NexusMed**! 🎉 This innovative project is designed to revolutionize how we manage the procurement, distribution, and tracking of pharmaceuticals, ensuring that the right products reach the right places at the right times and under optimal conditions.
 
 ## 🚀 Project Overview
 
@@ -43,15 +43,15 @@ Our system isn’t just about managing inventory—it’s about transforming how
 
 ## 📦 Getting Started
 
-To get started with the Drug Inventory and Supply Chain Tracking System:
+To get started with the NexusMed:
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/your-org/drug-inventory-tracking-system.git
+   git clone https://github.com/rishab2211/NexusMed.git
    ```
 2. **Install Dependencies**:
    ```bash
-   cd drug-inventory-tracking-system
+   cd NexusMed
    npm install
    ```
 3. **Configure the System**: 
@@ -61,22 +61,12 @@ To get started with the Drug Inventory and Supply Chain Tracking System:
    npm start
    ```
 
-## 🛠 Contributing
+## 🛠 Developers
 
-We welcome contributions from the community! If you have ideas, improvements, or bug fixes, please open an issue or submit a pull request. For detailed guidelines, check out the `CONTRIBUTING.md` file.
+- Piyush kumar - https://github.com/piyushk8/
+- Rishab raj - https://github.com/rishab2211/
+- Purnima kishore - https://github.com//
+- Deepak pal - https://github.com/Deepalpal0807/
+- Ashwani kumar - https://github.com//
 
-## 📜 License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the system according to the terms of the license.
-
-## 🤝 Support
-
-If you have any questions or need support, don’t hesitate to reach out to us at [support@your-org.com](mailto:support@your-org.com) or open an issue on GitHub.
-
-Thank you for checking out our Drug Inventory and Supply Chain Tracking System. Together, let’s make healthcare logistics more efficient and effective!
-
-Happy coding! 🎉
-
----
-
-Feel free to tailor this README to fit the specific details and technical requirements of your project!
