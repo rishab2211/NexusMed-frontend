@@ -65,7 +65,7 @@ To get started with the NexusMed:
 
 - Piyush kumar - https://github.com/piyushk8/
 - Rishab raj - https://github.com/rishab2211/
-- Purnima kishore - https://github.com//
+- Purnima kishore - https://github.com/PurnimaKishore/
 - Deepak pal - https://github.com/Deepalpal0807/
 - Ashwani kumar - https://github.com//
 
