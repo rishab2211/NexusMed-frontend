@@ -1,7 +1,7 @@
 import React from "react";
 import { listOfMedicines } from "../../../constants/ListOfMedicines";
 
-function ListTable() {
+function ListTable({ filteredMedicines }) {
   return (
     <div>
       <div className="overflow-x-auto">
@@ -27,7 +27,7 @@ function ListTable() {
             </tr>
           </thead>
           <tbody>
-            {listOfMedicines.map((item, index) => (
+            {filteredMedicines.map((item, index) => (
               <tr key={index} className="text-center border-b">
                 <td className="px-2 py-1 border border-slate-300 ">
                   {index + 1}
@@ -44,9 +44,9 @@ function ListTable() {
                 <td className="px-2 py-1 border border-slate-300 ">
                   {item["Stock in Qty"]}
                 </td>
-                <button>
-                  <td className="px-2 py-1 font-semibold ">{item["Action"]}</td>
-                </button>
+                
+                  <td className="px-2 py-1 font-semibold "><button>{item["Action"]}</button></td>
+                
               </tr>
             ))}
           </tbody>
