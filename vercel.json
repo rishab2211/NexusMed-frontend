@@ -1,5 +1,4 @@
 {
-    "verison":"2",
     "rewrites":[
         {
             "source":"/(.*)",
