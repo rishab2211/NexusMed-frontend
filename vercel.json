@@ -1,0 +1,11 @@
+{
+    "verison":"2",
+    "rewrites":[
+        {
+            "source":"/(.*)",
+            "desitination":"index.html"
+        }
+    ]
+
+
+}
