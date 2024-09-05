@@ -7,30 +7,27 @@ import Inventory from "./pages/Inventory";
 import ListOfMedicines from "./pages/ListOfMedicines";
 import MedicineGroups from "./components/Inventory/MedicineGroups/MedicineGroups";
 import Signin from "./components/SignIn/Signin";
+import Signup from "./components/Signup/Signup";
+import { PrivateRoute } from './components/Routes';  // Import PrivateRoute
 
 function App() {
   return (
-    <div>
-      
-      <div>
-        <BrowserRouter>
-          <Layout>
-            <Routes>
-              <Route path="/" element={<Dashboard/>} />
-              <Route path="/help" element={<Help/>} />
-              <Route path="/inventory" element={<Inventory/>} />
-              <Route path="/inventory/ListOfMedicines" element={<ListOfMedicines />}
-              />
-              <Route path="/inventory/MedicineGroups" element={<MedicineGroups />}
-              />
-              <Route path="/" />
-            </Routes>
-          </Layout>
-        </BrowserRouter>
-      </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/signup" element={<Signup />} />
 
-
-    </div>
+        {/* Private Routes */}
+        <Route element={<PrivateRoute><Layout /></PrivateRoute>}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/inventory/ListOfMedicines" element={<ListOfMedicines />} />
+          <Route path="/inventory/MedicineGroups" element={<MedicineGroups />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

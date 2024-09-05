@@ -1,13 +1,11 @@
-import React, { Children } from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Header } from "./Header";
 import { SideBar } from "./SideBar";
-import { useEffect } from "react";
 import { MainPart } from "./MainPart";
 import { Content } from "./Content";
-import { CardSection } from "../Dashboard/CardSection";
-import { BigCardSection } from "../Dashboard/BigCardSection";
-function Layout({children}) {
+import { Outlet } from "react-router-dom"; // Import Outlet to render nested routes
+
+function Layout() {
   const [darkMode, setDarkMode] = useState(false);
   const [isSideBarOpen, setSideOpen] = useState(false);
 
@@ -37,8 +35,9 @@ function Layout({children}) {
       <SideBar isSideBarOpen={isSideBarOpen} toggleSideBar={toggleSideBar} />
 
       <MainPart>
-        <Content className="" >
-            <main>{children}</main>
+        <Content>
+          {/* This is where the nested route content will be rendered */}
+          <Outlet />
         </Content>
       </MainPart>
     </div>

@@ -7,7 +7,18 @@ function Signin() {
   const navigate = useNavigate()
 
   const goToDashboard = ()=>{
+
+    console.log("navigation to dashboard");
+    
+
+    // Mock authentication by setting a flag in localStorage
+    localStorage.setItem("auth", "true");
+
     navigate("/dashboard");
+  }
+
+  const goToSignup = ()=>{
+    navigate("/signup")
   }
 
   return (
@@ -70,7 +81,7 @@ function Signin() {
 
               <div className="flex gap-1">
                 <div>Need to Signup?</div>
-                <div className="text-blue-500 underline hover:cursor-pointer">Signup</div>
+                <div className="text-blue-500 underline hover:cursor-pointer" onClick={goToSignup} >Signup</div>
               </div>
             </div>
           </div>

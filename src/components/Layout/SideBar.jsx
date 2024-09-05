@@ -37,7 +37,7 @@ export function SideBar({ isSideBarOpen, toggleSideBar }) {
   }, [toggleSideBar]);
 
   const goToDashboard = () => {
-    navigate("/");
+    navigate("/dashboard");
   };
   const goToHelpPage = () => {
     navigate("/Help");
