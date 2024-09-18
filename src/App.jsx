@@ -23,7 +23,7 @@ function App() {
 
         {/* Private Routes */}
         <Route element={<PrivateRoute><Layout /></PrivateRoute>}>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/help" element={<Help />} />
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/inventory/ListOfMedicines" element={<ListOfMedicines />} />
